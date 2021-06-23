@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/cardview_default_elevation"
+    android:padding="80sp"
+    android:paddingLeft="80sp"
+    android:paddingTop="80sp"
+    android:paddingRight="80sp"
+    android:paddingBottom="20sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30sp"
+        android:paddingTop="15sp"
+        android:paddingRight="30sp"
+        android:paddingBottom="15sp">
+
+        <ImageView
+            android:id="@+id/fotoMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/happy_dog_png_dogs_labradors_11563057164unft9mx3kl">
+
+
+        </ImageView>
+
+        <ImageButton
+            android:id="@+id/like"
+            android:layout_width="47dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/likebutton" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/nombre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textSize="30sp"
+            android:textStyle="bold">
+            a
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/txtColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Beige"
+            android:textSize="20sp"
+            android:textStyle="italic">
+            a
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
