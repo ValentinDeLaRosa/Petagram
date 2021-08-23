@@ -7,4 +7,8 @@
     <string name="mascota5">Mascota 5</string>
     <string name="mascota6">Mascota 6</string>
     <string name="Mejores">Las cinco mascotas con más likes son</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="menu_contact">Contact</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

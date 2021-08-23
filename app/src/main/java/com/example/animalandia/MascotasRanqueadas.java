@@ -5,7 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+
+import com.example.animalandia.adapter.MascotasAdaptador;
 
 import java.util.ArrayList;
 

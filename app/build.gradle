@@ -33,11 +33,19 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation files('C:\\Users\\Semuret\\Documents\\GitHub\\Petagram\\app\\libs\\activation.jar')
+    implementation files('C:\\Users\\Semuret\\Documents\\GitHub\\Petagram\\app\\libs\\additionnal.jar')
+    implementation files('C:\\Users\\Semuret\\Documents\\GitHub\\Petagram\\app\\libs\\mail.jar')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation "androidx.cardview:cardview:1.0.0"
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+    implementation files('libs\\activation.jar')
+    implementation files('libs\\additionnal.jar')
+    implementation files('libs\\mail.jar')
+    implementation 'com.mikhaellopez:circularimageview:4.3.0'
 
 
 }
