@@ -29,11 +29,11 @@ public class MascotasRanqueadas extends AppCompatActivity {
 
         mejoresMascotas = new ArrayList<>();
 
-        for ( int i = 0 ; i < imagen.size() ; ++i ){
+        /*for ( int i = 0 ; i < imagen.size() ; ++i ){
 
             mejoresMascotas.add(new Mascotas(imagen.get(i), nombre.get(i) , likes.get(i) ));
 
-        }
+        }*/
 
         rvlitaMejoresMascotas = (RecyclerView) findViewById(R.id.rvMascotasRanqueadas);
 
@@ -46,9 +46,9 @@ public class MascotasRanqueadas extends AppCompatActivity {
     }
 
     public void inicializarAdapdator(){
-
+/*
         MascotasAdaptador adaptador = new MascotasAdaptador(mejoresMascotas);
-        rvlitaMejoresMascotas.setAdapter(adaptador);
+        rvlitaMejoresMascotas.setAdapter(adaptador);*/
     }
 
 

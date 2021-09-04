@@ -27,7 +27,7 @@ public class perfilFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_perfil, container, false);
         mascotas = new ArrayList<Mascotas>();
-        mascotas.add(new Mascotas(R.drawable.mascota1,"Mascota 1",0));
+        /*mascotas.add(new Mascotas(R.drawable.mascota1,"Mascota 1",0));
         mascotas.add(new Mascotas(R.drawable.mascota2,"Mascota 2", 0));
         mascotas.add(new Mascotas(R.drawable.mascota3,"Mascota 3",0));
         mascotas.add(new Mascotas(R.drawable.mascota4,"Mascota 4",0));
@@ -38,7 +38,7 @@ public class perfilFragment extends Fragment {
         GridLayoutManager glm = new GridLayoutManager(getActivity(),3,GridLayoutManager.VERTICAL, false);
         rvPerfil.setLayoutManager(glm);
         MascotasAdaptador adaptador = new MascotasAdaptador(mascotas);
-        rvPerfil.setAdapter(adaptador);
+        rvPerfil.setAdapter(adaptador);*/
 
         return v;
     }

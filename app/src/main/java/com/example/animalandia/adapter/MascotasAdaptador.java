@@ -1,5 +1,6 @@
 package com.example.animalandia.adapter;
 
+import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.animalandia.DB.ConstructorMascotas;
 import com.example.animalandia.Mascotas;
 import com.example.animalandia.R;
 
@@ -18,13 +20,13 @@ import java.util.ArrayList;
 public class MascotasAdaptador extends RecyclerView.Adapter<MascotasAdaptador.MascotasViewHolder> {
 
     ArrayList<Mascotas> mascotas;
-
+    Activity activity;
     Integer             contador;
 
 
 
-    public MascotasAdaptador(ArrayList<Mascotas> mascotas){
-
+    public MascotasAdaptador(ArrayList<Mascotas> mascotas, Activity activity){
+        this.activity = activity;
         this.mascotas = mascotas;
     }
 
@@ -46,16 +48,16 @@ public class MascotasAdaptador extends RecyclerView.Adapter<MascotasAdaptador.Ma
         mascotasViewHolder.imgFoto.setImageResource(mascota.getFoto());
         mascotasViewHolder.tvNombreCV.setText(mascota.getNombre());
         mascotasViewHolder.conteoLikes.setText(stringconteo);
+        System.out.println(mascota.getId());
 
 
         mascotasViewHolder.btnLike.setOnClickListener(new View.OnClickListener(){
-
             public void  onClick(View v){
-                contador = mascota.getConteo();
-                contador = contador + 1 ;
-                String likes = Integer.toString(contador);
-                mascotasViewHolder.conteoLikes.setText(likes);
-                mascota.setConteo(contador);
+                ConstructorMascotas constructorMascotas = new ConstructorMascotas(activity); //Revisar el activity
+                constructorMascotas.darLikeMascota(mascota);
+                System.out.println(constructorMascotas.obtenerLikesMascota(mascota));
+                mascotasViewHolder.conteoLikes.setText(constructorMascotas.obtenerLikesMascota(mascota)+"");
+
 
             }
 
